@@ -5,11 +5,9 @@
 
 @ifdef ( ClusterController::enable )
 
-redef ClusterController::enable = T;
-redef ClusterAgent::enable = T;
+@load ./test-common
 
-redef ClusterAgent::name = "instance-1";
-
+# Telling the controller about instance locations will make it connect to them them.
 redef ClusterController::instances = {
 	["instance-1"] = ClusterController::Types::Instance($name="", $host=127.0.0.1, $listen_port=2151/tcp)
 };
