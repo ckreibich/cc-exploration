@@ -6,6 +6,6 @@
 @load ./test-common
 
 # Telling the controller about instance locations will make it connect to them them.
-redef ClusterController::instances = {
-	["instance-1"] = ClusterController::Types::Instance($name="", $host=127.0.0.1, $listen_port=2151/tcp)
-};
+#redef ClusterController::instances = {
+#	["instance-1"] = ClusterController::Types::Instance($name="", $host=127.0.0.1, $listen_port=2151/tcp)
+#};
