@@ -6,4 +6,4 @@
 @load ./test-common
 
 # Telling the agent about the controller's location will make it connect to the controller.
-redef ClusterAgent::controller = [$address="127.0.0.1", $bound_port=2150/tcp];
+redef Management::Agent::controller = [$address="127.0.0.1", $bound_port=2150/tcp];
